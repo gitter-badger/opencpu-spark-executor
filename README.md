@@ -1,9 +1,9 @@
 #R OpenCPU Spark Executor (ROSE) Library
 
 ROSE is a Scala library offering the full scientific computing power of
-the R programming language to JVM-based
+the R programming language to 
 [Apache Spark](http://spark.apache.org/) batch and streaming
-applications. This library is built on top of the
+applications on the JVM. This library is built on top of the
 [opencpu-r-executor](https://github.com/onetapbeyond/opencpu-r-executor)
 library, a lightweight solution for integrating R analytics executed on
 the [OpenCPU server](https://www.opencpu.org/) into any application
@@ -12,9 +12,9 @@ running on the JVM.
 ### ROSE Motivation
 
 The popular [Apache SparkR](https://github.com/apache/spark/tree/master/R)
-package provides a lightweight frontend for data scientists to use
+package provides a lightweight front-end for data scientists to use
 Apache Spark from R. This approach is ideally suited to
-investigative analytics, such as ad-hoc and exploratory analysis.
+investigative analytics, such as ad-hoc and exploratory analysis at scale.
 
 The ROSE library provides the same R analytics capabilities available to
 Apache SparkR applications within traditional Spark applications on the JVM.
@@ -113,9 +113,7 @@ by calling the new `analyze` operation provided by ROSE on each RDD within
 the stream: 
 
 ```
-val rResultStream = rTaskStream.transform(rdd => {
-	rdd.analyze
-})
+val rResultStream = rTaskStream.transform(rdd => rdd.analyze)
 ```
 
 When `rTaskStream.transform` is evaluated by Spark the resultant
@@ -157,7 +155,7 @@ of application deployments.
 
 While data scientists can leverage the computing power of Spark within R
 applications in these types of application deployments, these same R
-capabilities are not available to Spark application developers on the JVM.
+capabilities are not available to Scala, Java or Python developers.
 
 
 ####3. Scala | Java + R (ROSE) Spark Application Deployment
