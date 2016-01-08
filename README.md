@@ -143,7 +143,7 @@ options for those servers in the context of Spark are discussed in
 
 ####1. Traditional Scala | Java | Python Spark Application Deployment
 
-![Traditional Deployment: Spark](https://onetapbeyond.github.io/resource/img/ose/trad-spark-deploy.jpg)
+![Traditional Deployment: Spark](https://onetapbeyond.github.io/resource/img/rose/trad-spark-deploy.jpg)
 
 Without ROSE library support, neither data scientists nor application
 developers have access to R's analytic capabilities within these types
@@ -151,7 +151,7 @@ of application deployments.
 
 ####2. Traditional SparkR Application Deployment
 
-![Traditional Deployment: SparkR](https://onetapbeyond.github.io/resource/img/ose/trad-sparkr-deploy.jpg)
+![Traditional Deployment: SparkR](https://onetapbeyond.github.io/resource/img/rose/trad-sparkr-deploy.jpg)
 
 While data scientists can leverage the computing power of Spark within R
 applications in these types of application deployments, these same R
@@ -160,7 +160,7 @@ capabilities are not available to Scala, Java or Python developers.
 
 ####3. Scala | Java + R (ROSE) Spark Application Deployment
 
-![New Deployment: opencpu-spark-executor](https://onetapbeyond.github.io/resource/img/ose/new-ose-deploy.jpg)
+![New Deployment: opencpu-spark-executor](https://onetapbeyond.github.io/resource/img/rose/new-rose-deploy.jpg)
 
 Both data scientists and application developers working in either Scala or
 Java can leverage the full power of R using the ROSE library within these
@@ -175,7 +175,7 @@ worker node on the cluster.
 
 ####4. Scala | Java + R (ROSE) Spark Application Deployment (Alternative)
 
-![Alt Deployment: opencpu-spark-executor](https://onetapbeyond.github.io/resource/img/ose/alt-ose-deploy.jpg)
+![Alt Deployment: opencpu-spark-executor](https://onetapbeyond.github.io/resource/img/rose/alt-rose-deploy.jpg)
 
 Both data scientists and application developers working in either Scala or
 Java can leverage the full power of R using the ROSE library within these
